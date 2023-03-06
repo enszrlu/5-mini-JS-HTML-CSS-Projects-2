@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(68, 112, 112);
+    font-family: 'Nunito';
+    font-size: 16px;
+    min-height: 100vh;
+    width: 100vw;
+    overflow-y: scroll;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    width: 300px;
+    height: 400px;
+    background-color: rgb(19, 35, 35);
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+form h1 {
+    margin-bottom: 30px;
+}
+input {
+    width: 100%;
+}
+
+.inputBox input {
+    height: 30px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgb(75, 140, 140);
+    color: white;
+}
+
+input[type='button'] {
+    height: 50px;
+    background-color: rgb(75, 140, 140);
+    border: none;
+    border-radius: 10px;
+}
+a {
+    text-decoration: none;
+}
+a:visited {
+    color: rgb(75, 140, 140);
+}
+
+.inputBox h4 {
+    width: fit-content;
+    position: relative;
+    top: -30px;
+    pointer-events: none;
+}
+
+.inputBox input:focus {
+    outline: none;
+}
+
+h4 span {
+    position: relative;
+    top: 0;
+    transition: top 0.5s ease;
+}
+.inputBox input:focus + h4 span {
+    top: -30px;
+    color: rgb(75, 140, 140);
+}
